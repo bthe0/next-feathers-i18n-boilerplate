@@ -1,0 +1,8 @@
+{
+  "apiUrl": "http://localhost:3030",
+  "fallbackLang": "en",
+  "languages": [
+    "en",
+    "fr"
+  ]
+}

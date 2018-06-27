@@ -1,0 +1,5 @@
+{
+  "host": "server-app.feathersjs.com",
+  "port": "3030",
+  "baseUrl": "http://localhost:3030"
+}

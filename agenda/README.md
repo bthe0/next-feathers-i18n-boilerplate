@@ -1,0 +1,1 @@
+Agenda component for intervaled tasks

@@ -1,0 +1,51 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "baseUrl": "http://localhost:3030",
+  "public": "../server/public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "256da699b0cb3cf9b88958d4277dc9701e99d593cf902a1ccccbd92f62a06133f23b55cae3be13c2ad72466169082568a3c8699cce4d9683340e9eb81908d4d7a0822426debc9924d9393a7ad9e3f6c6be708789ec3b4681163877a5225870c094f8b17ac2a0b98d750844d2692cfae67e7a4112a1666fc07dd079af88765154d8ee0ec55c3b66bf3d06dd87bd314d8f98d2958216e1c0808892219cee1bb8e7de589af30b83d2cd09b3c9604a40744ae734c0ea500a7f5b64cdd56ac84cb22ea3db46920c39bcd7c1f358dc43921a24c8c4945e7db763c7e382b1c0d3b42d35bc8677ec208db396dace91e02340fb614056bac47c25976abebf8ea2073d4dba",
+    "strategies": [
+      "jwt",
+      "local",
+      "local-username"
+    ],
+    "path": "/api/auth",
+    "service": "/api/users",
+    "cookie": "_token",
+    "storageKey": "_token",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mongodb": "",
+  "mailSettings": {
+    "host": "",
+    "port": 587,
+    "secure": false,
+    "requireTLS": false,
+    "auth": {
+      "user": "",
+      "pass": ""
+    },
+    "tls": {
+      "rejectUnauthorized": false
+    }
+  }
+}
